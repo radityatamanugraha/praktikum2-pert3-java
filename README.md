@@ -23,7 +23,7 @@ Analogi: Bayangkan ingin membuat kue. Sebelum membuat kue (objek), kita butuh re
 - Memiliki atribut 'nama' (bertipe data string) dan 'umur' (bertipe data integer).
 - Memiliki method 'sapa()' yang tidak menerima parameter (void) dan mungkin digunakan untuk menampilkan salam.
 ```
-## Objek 'antor' :
+### Objek 'antor' :
 ```
 - Sebuah instance dari class 'Person' dengan nilai atribut 'nama' = "Antor"' dan 'umur = 25.'
 ```
@@ -55,6 +55,55 @@ Analogi: Bayangkan ingin membuat kue. Sebelum membuat kue (objek), kita butuh re
 ```
 Sebuah instance dari class 'AkunBank' dengan nilai atribut 'noRekening = "1234567890"' dan 'saldo = 1000000.'
 ```
+
+![gambar](pemrograman-orientasi-objek2-java/img/ss1-latihan2.jpeg)
+
+# Buatlah kode program java untuk :
+
+# • Mendeklarasikan class Person,dengan atribut Nama,JenisKelamin
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+```java
+public class Person {
+    private String nama;
+    private int umur;
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
