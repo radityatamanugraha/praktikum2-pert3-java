@@ -20,16 +20,40 @@ Analogi: Bayangkan ingin membuat kue. Sebelum membuat kue (objek), kita butuh re
 ## Penjelasan :
 ### Class 'person' :
 ```
-- Memiliki atribut nama (bertipe data string) dan umur (bertipe data integer).
-- Memiliki method sapa() yang tidak menerima parameter (void) dan mungkin digunakan untuk menampilkan salam.
+- Memiliki atribut 'nama' (bertipe data string) dan 'umur' (bertipe data integer).
+- Memiliki method 'sapa()' yang tidak menerima parameter (void) dan mungkin digunakan untuk menampilkan salam.
 ```
 ## Objek 'antor' :
 ```
-- Sebuah instance dari class Person dengan nilai atribut nama = "Antor" dan umur = 25.
+- Sebuah instance dari class 'Person' dengan nilai atribut 'nama' = "Antor"' dan 'umur = 25.'
 ```
 ### Objek 'riko' :
 ```
-- Sebuah instance dari class Person dengan nilai atribut nama = "Riko" dan umur = 30.
+- Sebuah instance dari class 'Person' dengan nilai atribut 'nama = "Riko"' dan 'umur = 30.'
+```
+
+#  • Buatlah gambar diagram objek AkunBank dengan instance method simpanUang,ambilUang dan cekSaldo
+
+![gambar](latihan1-gambar-diagram/ss2-flowchart.png)
+
+## Penjelasan :
+### Class 'AkunBank' :
+```
+- Memiliki atribut 'noRekening' (bertipe data string) dan saldo (bertipe data double).
+```
+```
+- Memiliki method 'simpanUang(jumlah: double)' untuk menambahkan saldo.
+```
+```
+- Memiliki method 'ambilUang(jumlah: double)' untuk mengurangi saldo.
+```
+```
+- Memiliki method 'cekSaldo()' untuk menampilkan saldo saat ini.
+```
+
+### Objek 'objekAkunBank' :
+```
+Sebuah instance dari class 'AkunBank' dengan nilai atribut 'noRekening = "1234567890"' dan 'saldo = 1000000.'
 ```
 
 
