@@ -152,7 +152,7 @@ public static void main(String[] args) {
 - 'Person Riko = new Person("Riko", "Laki-laki", 30);': Membuat objek 'Riko' dari kelas 'Person', dengan nilai 'nama' = '"Riko"', 'jenisKelamin' = '"Laki-laki"', dan 'umur' = '30'.
 ```
 
-## Mencetak informasi ke konsol
+## • Mencetak informasi ke konsol
 ### Menampilkan informasi Anton :
 ```java
         System.out.println("Nama Anton: " + Anton.getNama());
