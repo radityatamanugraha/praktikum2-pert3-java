@@ -186,3 +186,86 @@ Anton dan Riko adalah dua objek yang dibuat dari class 'Person'.
 - Anton memiliki nilai '"Anton"', '"Laki-laki"', dan '25' untuk atribut 'nama', 'jenisKelamin', dan 'umur'.
 - Riko memiliki nilai '"Riko"', '"Laki-laki"', dan '30' untuk atribut 'nama', 'jenisKelamin', dan 'umur'.
 ```
+
+![gambar](pemrograman-orientasi-objek3-java/ss1-latihan3.jpeg)
+
+# Buatlah kode java untuk :
+# • Mendeklaraskian classAkunBank dan tetapkan nilai saldo awal dengan intance method simpanUang, ambilUang dan cekSaldo
+## • Deklarasi kelas
+```java
+public class AkunBank {
+    private int saldo;
+```
+### Penjelasan :
+```
+- 'public class AkunBank': Ini mendefinisikan sebuah kelas bernama 'AkunBank'. Kelas ini bersifat publik, yang berarti bisa diakses dari bagian mana pun dari program.
+- 'private int saldo': Mendeklarasikan variabel 'saldo' yang bersifat private, berarti hanya bisa diakses dari dalam kelas 'AkunBank'. Variabel ini menyimpan jumlah uang yang ada di akun bank.
+```
+## • Constructor
+```java
+public AkunBank(int saldoAwal) {
+        this.saldo = saldoAwal;
+    }
+```
+### Penjelasan :
+```
+- 'public AkunBank(int saldoAwal)': Ini adalah constructor, yaitu metode khusus yang akan dipanggil ketika objek dari kelas ini dibuat. Constructor menerima parameter 'saldoAwal', yang digunakan untuk menginisialisasi saldo awal akun.
+- this.saldo = saldoAwal: this digunakan untuk merujuk ke variabel instance 'saldo' dari objek yang sedang dibuat, dan mengisinya dengan nilai 'saldoAwal'.
+```
+
+## • Method simpanUang
+```java
+public void simpanUang(int jumlah) {
+        saldo += jumlah;
+        System.out.println("Simpan uang: Rp. " + jumlah);
+        System.out.println("Saldo saat ini: Rp. " + saldo);
+    }
+```
+### Penjelasan :
+```
+- 'public void simpanUang(int jumlah)': Ini adalah method untuk menambah uang ke akun. Metode ini tidak mengembalikan nilai (menggunakan 'void'), dan menerima parameter jumlah, yaitu 'jumlah' uang yang ingin disimpan.
+- 'saldo += jumlah': Menambahkan 'jumlah' ke variabel saldo, berarti saldo bertambah sesuai dengan uang yang disimpan.
+- 'System.out.println(...)': Mencetak informasi ke konsol, yaitu jumlah uang yang disimpan dan saldo saat ini setelah penyimpanan.
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+![gambar](pemrograman-orientasi-objek3-java/ss1.png)
