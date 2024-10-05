@@ -178,6 +178,7 @@ public static void main(String[] args) {
 ![gambar](pemrograman-orientasi-objek2-java/img/ss1.png)
 
 # • Buatlah dua buah objek dari class Person bernama Anton dan Riko
+![gambar](pemrograman-orientasi-objek2-java/img/ss1.png)
 ### Penjelasan :
 ```
 Anton dan Riko adalah dua objek yang dibuat dari class 'Person'.
