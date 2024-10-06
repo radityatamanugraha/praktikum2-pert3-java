@@ -18,18 +18,18 @@ Analogi: Bayangkan ingin membuat kue. Sebelum membuat kue (objek), kita butuh re
 ![gambar](latihan1-gambar-diagram/ss1-flowchart.png)
 
 ## Penjelasan :
-### Class 'person' :
+### Class person :
 ```
-- Memiliki atribut 'nama' (bertipe data string) dan 'umur' (bertipe data integer).
-- Memiliki method 'sapa()' yang tidak menerima parameter (void) dan mungkin digunakan untuk menampilkan salam.
+- Memiliki atribut nama (bertipe data string) dan umur (bertipe data integer).
+- Memiliki method sapa() yang tidak menerima parameter (void) dan mungkin digunakan untuk menampilkan salam.
 ```
-### Objek 'antor' :
+### Objek antor :
 ```
-- Sebuah instance dari class 'Person' dengan nilai atribut 'nama' = "Antor"' dan 'umur = 25.'
+- Sebuah instance dari class Person dengan nilai atribut nama = "Antor" dan umur = 25.
 ```
-### Objek 'riko' :
+### Objek riko :
 ```
-- Sebuah instance dari class 'Person' dengan nilai atribut 'nama = "Riko"' dan 'umur = 30.'
+- Sebuah instance dari class Person dengan nilai atribut nama = "Riko" dan umur = 30.
 ```
 
 #  • Buatlah gambar diagram objek AkunBank dengan instance method simpanUang,ambilUang dan cekSaldo
@@ -37,23 +37,23 @@ Analogi: Bayangkan ingin membuat kue. Sebelum membuat kue (objek), kita butuh re
 ![gambar](latihan1-gambar-diagram/ss2-flowchart.png)
 
 ## Penjelasan :
-### Class 'AkunBank' :
+### Class AkunBank :
 ```
-- Memiliki atribut 'noRekening' (bertipe data string) dan saldo (bertipe data double).
-```
-```
-- Memiliki method 'simpanUang(jumlah: double)' untuk menambahkan saldo.
+- Memiliki atribut noRekening (bertipe data string) dan saldo (bertipe data double).
 ```
 ```
-- Memiliki method 'ambilUang(jumlah: double)' untuk mengurangi saldo.
+- Memiliki method simpanUang(jumlah: double) untuk menambahkan saldo.
 ```
 ```
-- Memiliki method 'cekSaldo()' untuk menampilkan saldo saat ini.
+- Memiliki method ambilUang(jumlah: double) untuk mengurangi saldo.
+```
+```
+- Memiliki method cekSaldo() untuk menampilkan saldo saat ini.
 ```
 
-### Objek 'objekAkunBank' :
+### Objek objekAkunBank :
 ```
-Sebuah instance dari class 'AkunBank' dengan nilai atribut 'noRekening = "1234567890"' dan 'saldo = 1000000.'
+Sebuah instance dari class AkunBank dengan nilai atribut noRekening = "1234567890" dan saldo = 1000000.
 ```
 
 ![gambar](pemrograman-orientasi-objek2-java/img/ss1-latihan2.jpeg)
@@ -63,7 +63,7 @@ Sebuah instance dari class 'AkunBank' dengan nilai atribut 'noRekening = "123456
 # • Mendeklarasikan class Person, dengan atribut Nama, JenisKelamin, Umur
 
 # Input Code :
-## • Deklarasi kelas 'Person'
+## • Deklarasi kelas Person
 ```java
 public class Person {
     private String nama;
@@ -71,11 +71,11 @@ public class Person {
 ```
 ### Penjelasan :
 ```
-- 'public class Person': Menyatakan deklarasi kelas 'Person' yang bersifat publik, artinya bisa diakses dari mana saja.
-- 'private String nama;', 'private String jenisKelamin;', dan 'private int umur;': Mendeklarasikan tiga variabel instance '(nama, jenisKelamin, umur)' yang bersifat privat. Karena variabel ini privat, mereka hanya bisa diakses melalui metode getter dan setter dalam kelas 'Person'.
+- public class Person: Menyatakan deklarasi kelas Person yang bersifat publik, artinya bisa diakses dari mana saja.
+- private String nama;, private String jenisKelamin;, dan private int umur;: Mendeklarasikan tiga variabel instance (nama, jenisKelamin, umur) yang bersifat privat. Karena variabel ini privat, mereka hanya bisa diakses melalui metode getter dan setter dalam kelas Person.
 ```
 
-## • Constructor Kelas 'Person'
+## • Constructor Kelas Person
 ```java
  public Person(String nama, String jenisKelamin, int umur) {
         this.nama = nama;
@@ -85,12 +85,12 @@ public class Person {
 ```
 ### Penjelasan :
 ```
-- 'public Person(String nama, String jenisKelamin, int umur)': Ini adalah constructor kelas 'Person'. Constructor digunakan untuk menginisialisasi 'nilai' 'nama', 'jenisKelamin', dan 'umur' ketika objek 'Person' dibuat.
-- 'this.nama = nama';, 'this.jenisKelamin = jenisKelamin';, dan 'this.umur = umur;': 'this' digunakan untuk membedakan antara variabel instance (yang ada dalam kelas) dan parameter yang diberikan pada constructor. Kode ini mengisi variabel instance dengan nilai yang diberikan saat objek dibuat.
+- public Person(String nama, String jenisKelamin, int umur): Ini adalah constructor kelas Person. Constructor digunakan untuk menginisialisasi nilai nama, jenisKelamin, dan umur ketika objek 'Person' dibuat.
+- this.nama = nama;, this.jenisKelamin = jenisKelamin, dan this.umur = umur;: this digunakan untuk membedakan antara variabel instance (yang ada dalam kelas) dan parameter yang diberikan pada constructor. Kode ini mengisi variabel instance dengan nilai yang diberikan saat objek dibuat.
 ```
 
 ## • Getter dan Setter
-## Getter dan Setter untuk 'nama' :
+## Getter dan Setter untuk nama :
 ```java
 public String getNama() {
         return nama;
@@ -102,11 +102,11 @@ public String getNama() {
 ```
 ### Penjelasan :
 ```
-- 'getNama()': Mengembalikan nilai 'nama'.
-- 'setNama(String nama)': Mengubah nilai 'nama' dari objek 'Person'.
+- getNama(): Mengembalikan nilai nama.
+- setNama(String nama): Mengubah nilai nama dari objek Person.
 ```
 
-## Getter dan Setter untuk 'JenisKelamin' :
+## Getter dan Setter untuk JenisKelamin :
 ```java
 public String getJenisKelamin() {
         return jenisKelamin;
@@ -118,12 +118,12 @@ public String getJenisKelamin() {
 ```
 ### Penjelasan :
 ```
-- 'getJenisKelamin()': Mengembalikan nilai 'jenisKelamin'.
-- 'setJenisKelamin(String jenisKelamin)': Mengubah nilai 'jenisKelamin' dari objek 'Person'.
+- getJenisKelamin(): Mengembalikan nilai jenisKelamin.
+- setJenisKelamin(String jenisKelamin): Mengubah nilai jenisKelamin dari objek Person.
  
 ```
 
-## Getter dan Setter untuk 'umur' :
+## Getter dan Setter untuk umur :
 ```java
 public int getUmur() {
         return umur;
@@ -135,11 +135,11 @@ public int getUmur() {
 ```
 ### Penjelasan :
 ```
-- 'getUmur()': Mengembalikan nilai 'umur'.
-- 'setUmur(int umur)': Mengubah nilai 'umur' dari objek 'Person'.
+- getUmur(): Mengembalikan nilai umur.
+- setUmur(int umur): Mengubah nilai umur dari objek Person.
 ```
 
-##  • Method 'main'
+##  • Method main
 ```java
 public static void main(String[] args) {
         Person Anton = new Person("Anton", "Laki-laki", 25);
@@ -169,9 +169,9 @@ public static void main(String[] args) {
 ```
 ### Penjelasan :
 ```
-- 'System.out.println("Nama Anton: " + Anton.getNama());': Mengambil nilai 'nama' dari objek 'Anton' dengan menggunakan metode getter 'getNama()' dan mencetaknya ke konsol.
-- 'System.out.println("Jenis Kelamin Anton: " + Anton.getJenisKelamin());': Mengambil nilai 'jenisKelamin' dari objek 'Anton' dengan metode 'getJenisKelamin()'.
-- 'System.out.println("Umur Anton: " + Anton.getUmur());': Mengambil nilai 'umur dari objek 'Anton' dengan metode 'getUmur()'.
+- System.out.println("Nama Anton: " + Anton.getNama());: Mengambil nilai nama dari objek Anton dengan menggunakan metode getter getNama() dan mencetaknya ke konsol.
+- System.out.println("Jenis Kelamin Anton: " + Anton.getJenisKelamin());: Mengambil nilai jenisKelamin dari objek Anton dengan metode getJenisKelamin().
+- System.out.println("Umur Anton: " + Anton.getUmur());: Mengambil nilai umur dari objek Anton dengan metode getUmur().
 ```
 
 # Output :
@@ -181,10 +181,10 @@ public static void main(String[] args) {
 ![gambar](pemrograman-orientasi-objek2-java/img/ss1.png)
 ### Penjelasan :
 ```
-Anton dan Riko adalah dua objek yang dibuat dari class 'Person'.
+Anton dan Riko adalah dua objek yang dibuat dari class Person.
 
-- Anton memiliki nilai '"Anton"', '"Laki-laki"', dan '25' untuk atribut 'nama', 'jenisKelamin', dan 'umur'.
-- Riko memiliki nilai '"Riko"', '"Laki-laki"', dan '30' untuk atribut 'nama', 'jenisKelamin', dan 'umur'.
+- Anton memiliki nilai "Anton", "Laki-laki", dan 25 untuk atribut nama, jenisKelamin, dan umur.
+- Riko memiliki nilai "Riko", "Laki-laki", dan 30 untuk atribut nama, jenisKelamin, dan umur.
 ```
 
 ![gambar](pemrograman-orientasi-objek3-java/ss1-latihan3.jpeg)
@@ -198,8 +198,8 @@ public class AkunBank {
 ```
 ### Penjelasan :
 ```
-- 'public class AkunBank': Ini mendefinisikan sebuah kelas bernama 'AkunBank'. Kelas ini bersifat publik, yang berarti bisa diakses dari bagian mana pun dari program.
-- 'private int saldo': Mendeklarasikan variabel 'saldo' yang bersifat private, berarti hanya bisa diakses dari dalam kelas 'AkunBank'. Variabel ini menyimpan jumlah uang yang ada di akun bank.
+- public class AkunBank: Ini mendefinisikan sebuah kelas bernama AkunBank. Kelas ini bersifat publik, yang berarti bisa diakses dari bagian mana pun dari program.
+- private int saldo: Mendeklarasikan variabel saldo yang bersifat private, berarti hanya bisa diakses dari dalam kelas AkunBank. Variabel ini menyimpan jumlah uang yang ada di akun bank.
 ```
 ## • Constructor
 ```java
@@ -209,11 +209,11 @@ public AkunBank(int saldoAwal) {
 ```
 ### Penjelasan :
 ```
-- 'public AkunBank(int saldoAwal)': Ini adalah constructor, yaitu metode khusus yang akan dipanggil ketika objek dari kelas ini dibuat. Constructor menerima parameter 'saldoAwal', yang digunakan untuk menginisialisasi saldo awal akun.
-- this.saldo = saldoAwal: this digunakan untuk merujuk ke variabel instance 'saldo' dari objek yang sedang dibuat, dan mengisinya dengan nilai 'saldoAwal'.
+- public AkunBank(int saldoAwal): Ini adalah constructor, yaitu metode khusus yang akan dipanggil ketika objek dari kelas ini dibuat. Constructor menerima parameter saldoAwal, yang digunakan untuk menginisialisasi saldo awal akun.
+- this.saldo = saldoAwal: this digunakan untuk merujuk ke variabel instance saldo dari objek yang sedang dibuat, dan mengisinya dengan nilai saldoAwal.
 ```
 
-## • Method simpanUang
+## Method simpanUang
 ```java
 public void simpanUang(int jumlah) {
         saldo += jumlah;
@@ -223,49 +223,68 @@ public void simpanUang(int jumlah) {
 ```
 ### Penjelasan :
 ```
-- 'public void simpanUang(int jumlah)': Ini adalah method untuk menambah uang ke akun. Metode ini tidak mengembalikan nilai (menggunakan 'void'), dan menerima parameter jumlah, yaitu 'jumlah' uang yang ingin disimpan.
-- 'saldo += jumlah': Menambahkan 'jumlah' ke variabel saldo, berarti saldo bertambah sesuai dengan uang yang disimpan.
-- 'System.out.println(...)': Mencetak informasi ke konsol, yaitu jumlah uang yang disimpan dan saldo saat ini setelah penyimpanan.
+- public void simpanUang(int jumlah): Ini adalah method untuk menambah uang ke akun. Metode ini tidak mengembalikan nilai (menggunakan void), dan menerima parameter jumlah, yaitu jumlah uang yang ingin disimpan.
+- saldo += jumlah: Menambahkan jumlah ke variabel saldo, berarti saldo bertambah sesuai dengan uang yang disimpan.
+- System.out.println(...): Mencetak informasi ke konsol, yaitu j`umlah uang yang disimpan dan saldo saat ini setelah penyimpanan.
 ```
 
+## Method ambilUang
+```java
+public void ambilUang(int jumlah) {
+        if (jumlah <= saldo) {
+            saldo -= jumlah;
+            System.out.println("Ambil uang: Rp. " + jumlah);
+            System.out.println("Saldo saat ini: Rp. " + saldo);
+        } else {
+            System.out.println("Saldo tidak mencukupi.");
+        }
+    }
+```
+### Penjelasan
+```
+- public void ambilUang(int jumlah): Method untuk mengambil uang dari akun. Sama seperti simpanUang, method ini tidak mengembalikan nilai dan menerima parameter jumlah, yang merepresentasikan jumlah uang yang ingin diambil.
+- if (jumlah <= saldo): Mengecek apakah jumlah yang ingin diambil tidak melebihi saldo saat ini. Jika uang cukup, maka:
+saldo -= jumlah: Saldo dikurangi dengan jumlah yang ingin diambil.
+System.out.println(...): Menampilkan informasi tentang uang yang diambil dan saldo yang tersisa setelah pengambilan.
+- Jika uang yang ingin diambil lebih besar dari saldo:
+System.out.println("Saldo tidak mencukupi."): Menampilkan pesan bahwa saldo tidak cukup.
+```
 
+## Method cekSaldo
+```java
+public void cekSaldo() {
+        System.out.println("Saldo saat ini: Rp. " + saldo);
+    }
+```
+### Penjelasan
+```
+- public void cekSaldo(): Method ini digunakan untuk mengecek saldo saat ini di akun. Method ini tidak memerlukan parameter dan hanya menampilkan saldo yang ada saat ini.
+```
 
+## Method main
+```java
+public static void main(String[] args) {
+        AkunBank akun = new AkunBank(100000);
+        akun.cekSaldo();
+        akun.simpanUang(50000);
+        akun.ambilUang(75000);
+        akun.cekSaldo();
+    }
+}
+```
+### Penjelasan
+```
+- public static void main(String[] args): Ini adalah method main yang merupakan titik awal eksekusi dari program Java. Setiap program Java harus memiliki method main agar bisa dijalankan.
+- AkunBank akun = new AkunBank(100000): Membuat sebuah objek akun dari kelas AkunBank, dengan saldo awal sebesar 100000.
+- akun.cekSaldo(): Memanggil method cekSaldo untuk menampilkan saldo awal.
+- akun.simpanUang(50000): Memanggil method simpanUang untuk menambah saldo sebesar 50000.
+- akun.ambilUang(75000): Memanggil method ambilUang untuk mengambil uang sebesar 75000.
+- akun.cekSaldo(): Setelah transaksi di atas, method ini dipanggil lagi untuk menampilkan saldo akhir.
+```
 
+# Output :
+![gambar](pemrograman-orientasi-objek3-java/ss1.png)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# • Buat objek AkunBank dan tetapkan nilai saldo awal Rp. 100000, kemudian panggil 3 method tersebut dan tampilkan proses berikut :
 
 ![gambar](pemrograman-orientasi-objek3-java/ss1.png)
