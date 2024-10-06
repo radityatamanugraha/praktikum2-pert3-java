@@ -90,7 +90,7 @@ public class Person {
 ```
 
 ## • Getter dan Setter
-## Getter dan Setter untuk nama :
+### Getter dan Setter untuk nama :
 ```java
 public String getNama() {
         return nama;
@@ -106,7 +106,7 @@ public String getNama() {
 - setNama(String nama): Mengubah nilai nama dari objek Person.
 ```
 
-## Getter dan Setter untuk JenisKelamin :
+### Getter dan Setter untuk JenisKelamin :
 ```java
 public String getJenisKelamin() {
         return jenisKelamin;
@@ -123,7 +123,7 @@ public String getJenisKelamin() {
  
 ```
 
-## Getter dan Setter untuk umur :
+### Getter dan Setter untuk umur :
 ```java
 public int getUmur() {
         return umur;
