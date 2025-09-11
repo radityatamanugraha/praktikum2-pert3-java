@@ -1,4 +1,4 @@
-# Tugas Praktikum 2 (Pertemuan ke 3) 
+# Tugas Praktikum 2 (Pertemuan ke 3) <img src="https://www.oracle.com/a/ocom/img/cb71-java-logo.png" width="125" align="absmiddle">
 
 |Nama|NIM|Kelas|Mata Kuliah|
 |----|---|-----|------|
